@@ -1,0 +1,1 @@
+export const GymName = 'Life2Fit';
