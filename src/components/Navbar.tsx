@@ -4,7 +4,7 @@ import { GymName } from "../constants";
 const Navbar = () => {
   return (
     // create tailwind navbar
-    <nav className="w-full flex items-center justify-between flex-wrap bg-primary p-6">
+    <nav className="flex items-center justify-between flex-wrap bg-primary p-6">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <svg
           className="fill-current h-8 w-8 mr-2"
