@@ -39,25 +39,25 @@ const Navbar = () => {
         <div className="font-poppins text-sm lg:flex-grow lg:justify-items-center">
           <a
             href="#responsive-header"
-            className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-gray-200 hover:underline mr-7"
+            className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-gray-200 hover:underline hover:scale-125 transform transition duration-200 ease-in-out mr-7"
           >
             Home
           </a>
           <a
             href="#responsive-header"
-            className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white hover:underline mr-7"
+            className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white hover:underline hover:scale-125 transform transition duration-200 ease-in-out mr-7"
           >
             Find a Club
           </a>
           <a
             href="#responsive-header"
-            className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white hover:underline mr-7"
+            className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white hover:underline hover:scale-125 transform transition duration-200 ease-in-out mr-7"
           >
             Fitness Experiences
           </a>
           <a
             href="#responsive-header"
-            className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white hover:underline"
+            className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white hover:underline hover:scale-125 transform transition duration-200 ease-in-out"
           >
             Blog
           </a>
