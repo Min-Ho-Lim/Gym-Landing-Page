@@ -4,7 +4,7 @@ import { GymName } from "../constants";
 const Navbar = () => {
   return (
     // create tailwind navbar
-    <nav className="w-full flex items-center justify-between flex-wrap bg-primary p-6">
+    <nav className="flex items-center justify-between flex-wrap bg-primary p-6">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         <svg
           className="fill-current h-8 w-8 mr-2"
@@ -39,25 +39,25 @@ const Navbar = () => {
         <div className="font-poppins text-sm lg:flex-grow lg:justify-items-center">
           <a
             href="#responsive-header"
-            className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-gray-200 hover:underline mr-7"
+            className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-gray-200 hover:underline hover:scale-110 transform transition duration-200 ease-in-out mr-7"
           >
             Home
           </a>
           <a
             href="#responsive-header"
-            className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white hover:underline mr-7"
+            className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white hover:underline hover:scale-110 transform transition duration-200 ease-in-out mr-7"
           >
             Find a Club
           </a>
           <a
             href="#responsive-header"
-            className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white hover:underline mr-7"
+            className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white hover:underline hover:scale-110 transform transition duration-200 ease-in-out mr-7"
           >
             Fitness Experiences
           </a>
           <a
             href="#responsive-header"
-            className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white hover:underline"
+            className="block mt-4 lg:inline-block lg:mt-0 text-gray-200 hover:text-white hover:underline hover:scale-110 transform transition duration-200 ease-in-out"
           >
             Blog
           </a>
