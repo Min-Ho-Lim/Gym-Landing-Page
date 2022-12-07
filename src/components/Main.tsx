@@ -21,50 +21,54 @@ import {
 const Main = () => {
   return (
     <div>
-      <Swiper
-        // install Swiper modules
-        modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
-        centeredSlides={true}
-        autoplay={{
-          delay: 10000,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={false}
-        className="w-auto md:w-4/12 md:h-fit z-0"
-      >
-        <SwiperSlide>
-          <img src={slide1} alt="slide1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide2} alt="slide1" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide3} alt="slide1" />
-        </SwiperSlide>
-      </Swiper>
+      <div>
+        <Swiper
+          // install Swiper modules
+          modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
+          centeredSlides={true}
+          autoplay={{
+            delay: 10000,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={false}
+          className="w-1/3 z-0"
+        >
+          <SwiperSlide>
+            <img src={slide1} alt="slide1" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={slide2} alt="slide1" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={slide3} alt="slide1" />
+          </SwiperSlide>
+        </Swiper>
 
-      <div className="absolute flex flex-col bottom-0 left-10 z-2 justify-center">
-        <div className="flex flex-row items-end">
-          <img
-            src={DownRightArrow}
-            alt="down-right-arrow"
-            className="w-1/6 h-1/6 "
-          />
-          <h2 className="font-poppins text-3xl font-bold pl-5">
-            NEW EVENT <br />
-            COMING UP / DECEMBER 19-26
-          </h2>
+        <div className="relative flex flex-col left-10 z-10 justify-center ">
+          <div className="absolute bottom-0">
+            <div className="flex grow flex-row items-end">
+              <img
+                src={DownRightArrow}
+                alt="down-right-arrow"
+                className="w-1/6 h-1/6 "
+              />
+              <h2 className="font-poppins text-3xl font-bold pl-5">
+                NEW EVENT <br />
+                COMING UP / DECEMBER 19-26
+              </h2>
+            </div>
+
+            <h1 className="font-poppins text-[18vw] font-bold">CROSSFIT</h1>
+          </div>
         </div>
-
-        <h1 className="font-poppins text-[20rem] font-bold">CROSSFIT</h1>
       </div>
 
-      <div className="bg-secondary h-auto">
-        <div className="flex flex-col h-full p-56">
-          <h2 className="font-poppins text-5xl font-bold">
+      <div className="bg-secondary h-auto flex flex-col  ">
+        <div className="flex flex-col h-full p-[12vw] md:w-2/3 z-10">
+          <h2 className="font-poppins lg:text-5xl md:text-3xl text-2xl font-bold">
             BE YOURSELF, BUT STRONGER!
             <br />
             EMBRACE YOUR POWER
@@ -72,39 +76,49 @@ const Main = () => {
           <h3 className="pt-5 font-poppins">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
           </h3>
-          <button className="bg-primary text-white font-poppins w-1/4 text-xl font-bold py-3 px-10 rounded-full mt-10 ">
+          <button className="bg-primary text-white font-poppins text-xl md:w-1/3 font-bold rounded-full mt-10 ">
             VIEW MORE
           </button>
         </div>
-      </div>
-      <img
-        src={Holding}
-        alt="holding"
-        className="absolute top-[100%] right-72 w-auto h-3/4 z-1 hover:scale-110 transform transition duration-500 ease-in-out"
-      />
 
-      <div className="bg-primary h-auto">
-        <div className="h-full p-56 left-30">
-          <div className="flex flex-col items-end">
-            <h2 className="font-poppins text-5xl font-bold">
-              NOW OR NEVER
+        <div className="relative md:right-20">
+          <div className="md:absolute flex justify-center md:justify-end -bottom-10">
+            <img
+              src={Holding}
+              alt="holding"
+              className="object-scale-down w-1/2 md:w-1/4 hover:scale-105 transform transition duration-500 ease-in-out "
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-primary h-auto flex flex-col">
+        <div className="flex justify-end">
+          <div className="flex flex-col h-full p-[12vw] md:w-2/3 z-10">
+            <h2 className="font-poppins lg:text-5xl md:text-3xl text-2xl font-bold">
+              BE YOURSELF, BUT STRONGER!
               <br />
-              TODAY IS YOUR DAY
+              EMBRACE YOUR POWER
             </h2>
             <h3 className="pt-5 font-poppins">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
             </h3>
-            <button className="bg-secondary text-white font-poppins w-1/4 text-xl font-bold py-3 px-10 rounded-full mt-10 ">
+            <button className="bg-secondary text-white font-poppins text-xl md:w-1/3 font-bold rounded-full mt-10 ">
               VIEW MORE
             </button>
           </div>
         </div>
+
+        <div className="relative md:left-20">
+          <div className="md:absolute flex justify-center md:justify-start -bottom-10">
+            <img
+              src={Resting}
+              alt="Resting"
+              className="object-scale-down w-[70%] md:w-1/4 hover:scale-105 transform transition duration-500 ease-in-out "
+            />
+          </div>
+        </div>
       </div>
-      <img
-        src={Resting}
-        alt="Resting"
-        className="absolute top-[165%] left-72 w-auto h-3/4 z-1 hover:scale-110 transform transition duration-500 ease-in-out"
-      />
     </div>
   );
 };
