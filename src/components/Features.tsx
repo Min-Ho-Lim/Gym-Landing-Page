@@ -1,21 +1,65 @@
 import React from "react";
-import { Feature1 } from "../assets";
+import {
+  Feature1,
+  Feature2,
+  Feature3,
+  Feature4,
+  Feature5,
+  Feature6,
+} from "../assets";
+
+const features = [
+  {
+    image: Feature1,
+    text: "ACCOUNTABILITY",
+  },
+  {
+    image: Feature2,
+    text: "VARIETY",
+  },
+  {
+    image: Feature3,
+    text: "SUPPORT",
+  },
+  {
+    image: Feature4,
+    text: "MOTIVATION",
+  },
+  {
+    image: Feature5,
+    text: "GUARANTEED RESULTS",
+  },
+  {
+    image: Feature6,
+    text: "SOCIAL ATMOSPHERE",
+  },
+];
+
+const SingleFeature = (image: string | undefined, text: string) => {
+  return (
+    <div className="flex flex-col justify-center items-center">
+      <img
+        src={image}
+        alt={text}
+        className="w-20 h-20 md:w-40 md:h-40 hover:scale-105 transform transition duration-500 ease-in-out"
+      />
+      <div className="flex justify-center items-center font-poppins text-white text-lg md:text-2xl font-bold text-center mt-5 mb-5">
+        {text.toUpperCase()}
+      </div>
+    </div>
+  );
+};
 
 const Features = () => {
   return (
     <div className="bg-secondary p-20">
-      <h1 className="text-4xl text-center text-white">Features</h1>
-      <div className="flex flex-col md:flex-row justify-center items-center mt-20">
-        <div className="flex flex-col items-center">
-          <img src={Feature1} alt="Feature 1" className="w-96 h-96" />
-          <h1 className="text-2xl text-white mt-10">Feature 1</h1>
-          <p className="text-white text-center mt-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            euismod, nisl vel tincidunt luctus, nunc nisl aliquet nisl, nec
-            aliquet nisl nisl sit amet nisl. Sed euismod, nisl vel tincidunt
-            luctus, nunc nisl aliquet nisl, nec aliquet nisl nisl sit amet nisl.
-          </p>
-        </div>
+      <h1 className="font-poppins font-bold text-6xl text-center text-white">
+        Features
+      </h1>
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-6 mt-20 justify-evenly">
+        {features.map((feature) => {
+          return SingleFeature(feature.image, feature.text);
+        })}
       </div>
     </div>
   );
