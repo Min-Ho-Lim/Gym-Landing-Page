@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { GymName } from "../constants";
 
 const Navbar = () => {
+  // set the default dropmenu as false because we want to hide it in smaller screen
+  const [dropMenu, setDropMenu] = useState(false);
+  // function for toggling drop menu
+  const toggleDropMenu = () => {
+    setDropMenu(!dropMenu);
+  };
   return (
     // create tailwind navbar
     <nav className="flex items-center justify-between flex-wrap bg-primary p-6">
@@ -22,7 +28,10 @@ const Navbar = () => {
         </span>
       </div>
       <div className="block lg:hidden">
-        <button className="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white">
+        <button
+          onClick={toggleDropMenu}
+          className="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-white hover:border-white"
+        >
           <svg
             className="fill-current h-3 w-3"
             viewBox="0 0 20 20"
@@ -35,7 +44,11 @@ const Navbar = () => {
       </div>
       {/* tailwind center items */}
 
-      <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto lg:pl-5">
+      <div
+        className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto lg:pl-5  ${
+          dropMenu ? `block` : `hidden`
+        } `}
+      >
         <div className="font-poppins text-sm lg:flex-grow lg:justify-items-center">
           <a
             href="#responsive-header"
