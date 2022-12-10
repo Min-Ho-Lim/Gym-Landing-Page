@@ -10,6 +10,7 @@ import Feature3 from "./feature3.svg";
 import Feature4 from "./feature4.svg";
 import Feature5 from "./feature5.svg";
 import Feature6 from "./feature6.svg";
+import WorkOutVideo from "./workout-video.mp4";
 
 export {
   slide1,
@@ -24,4 +25,5 @@ export {
   Feature4,
   Feature5,
   Feature6,
+  WorkOutVideo,
 };
