@@ -1,4 +1,5 @@
 import React from "react";
+import BlogPosts from "./components/BlogPosts";
 import Features from "./components/Features";
 import JoinUs from "./components/JoinUs";
 import Main from "./components/Main";
@@ -11,6 +12,7 @@ const App = () => {
       <Main />
       <Features />
       <JoinUs />
+      <BlogPosts />
     </div>
   );
 };
