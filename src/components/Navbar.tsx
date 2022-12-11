@@ -6,7 +6,7 @@ const Navbar = () => {
   const [dropMenu, setDropMenu] = useState(false);
   // function for toggling drop menu
   const toggleDropMenu = () => {
-    setDropMenu(!dropMenu);
+    setDropMenu((prevState) => !prevState);
   };
   return (
     // create tailwind navbar
