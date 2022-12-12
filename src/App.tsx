@@ -9,7 +9,6 @@ import Navbar from './components/Navbar';
 const App = () => {
   return (
     <div className="w-screen bg-primary">
-      <LoadingScreen />
       <Navbar />
       <Main />
       <Features />
