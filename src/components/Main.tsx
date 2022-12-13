@@ -47,7 +47,7 @@ const Main = () => {
           </SwiperSlide>
         </Swiper>
 
-        <div className="relative flex flex-col left-10 z-10 justify-center ">
+        <div className="relative flex flex-col left-5 xs:left-10 z-10 justify-center ">
           <div className="absolute bottom-0">
             <div className="flex grow flex-row items-end">
               <img
@@ -55,9 +55,11 @@ const Main = () => {
                 alt="down-right-arrow"
                 className="w-1/6 h-1/6 "
               />
-              <h2 className="font-poppins text-3xl font-bold pl-5">
-                NEW EVENT <br />
-                COMING UP / DECEMBER 19-26
+              <h2 className=" flex flex-col font-poppins text-base xs:text-xl ss:text-2xl sm:text-3xl font-bold pl-2 xs:pl-5">
+                <span>NEW EVENT</span>
+                <span className="flex flex-col min-[350px]:flex-row">
+                  <span>COMING UP /</span> <span>DECEMBER 19-26</span>
+                </span>
               </h2>
             </div>
 
@@ -67,7 +69,7 @@ const Main = () => {
       </div>
 
       <div className="bg-secondary h-auto flex flex-col  ">
-        <div className="flex flex-col h-full p-[12vw] md:w-2/3 z-10">
+        <div className="flex flex-col h-full px-[10vw] py-[12vw] md:w-2/3 z-10">
           <h2 className="font-poppins lg:text-5xl md:text-3xl text-2xl font-bold">
             BE YOURSELF, BUT STRONGER!
             <br />
