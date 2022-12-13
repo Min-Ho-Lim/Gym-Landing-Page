@@ -52,8 +52,8 @@ const SingleFeature = (image: string | undefined, text: string) => {
 
 const Features = () => {
   return (
-    <div className="bg-secondary p-20">
-      <h1 className="font-poppins font-bold text-6xl text-center text-white">
+    <div className="bg-secondary py-20">
+      <h1 className="font-poppins font-bold 5xl sm:text-6xl text-center  text-white">
         Features
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-6 mt-20 justify-evenly">
