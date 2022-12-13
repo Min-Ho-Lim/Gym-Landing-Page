@@ -21,7 +21,7 @@ import {
 const Main = () => {
   return (
     <div>
-      <div>
+      <div className="relative">
         <Swiper
           // install Swiper modules
           modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
@@ -46,9 +46,8 @@ const Main = () => {
             <img src={slide3} alt="slide1" />
           </SwiperSlide>
         </Swiper>
-
-        <div className="relative flex flex-col left-5 xs:left-10 z-10 justify-center ">
-          <div className="absolute bottom-0">
+        <div className="flex flex-col left-5 xs:left-10 z-10 justify-center">
+          <div className="absolute bottom-0 left-5 sm:left-10">
             <div className="flex grow flex-row items-end">
               <img
                 src={DownRightArrow}
@@ -62,7 +61,6 @@ const Main = () => {
                 </span>
               </h2>
             </div>
-
             <h1 className="font-poppins text-[18vw] font-bold">CROSSFIT</h1>
           </div>
         </div>
