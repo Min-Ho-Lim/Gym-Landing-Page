@@ -15,36 +15,43 @@ import "swiper/css/effect-flip";
 
 const posts = [
   {
+    id: 1,
     title: "How to get a six pack",
     subTitle: "Indoor | Outdoor | Gym",
     image: Blog1,
   },
   {
+    id: 2,
     title: "How to get a six pack",
     subTitle: "Indoor | Outdoor | Gym",
     image: Blog2,
   },
   {
+    id: 3,
     title: "How to get a six pack",
     subTitle: "Indoor | Outdoor | Gym",
     image: Blog3,
   },
   {
+    id: 4,
     title: "How to get a six pack",
     subTitle: "Indoor | Outdoor | Gym",
     image: Blog4,
   },
   {
+    id: 5,
     title: "How to get a six pack",
     subTitle: "Indoor | Outdoor | Gym",
     image: Blog5,
   },
   {
+    id: 6,
     title: "How to get a six pack",
     subTitle: "Indoor | Outdoor | Gym",
     image: Blog6,
   },
   {
+    id: 7,
     title: "How to get a six pack",
     subTitle: "Indoor | Outdoor | Gym",
     image: Blog4,
@@ -106,7 +113,7 @@ const BlogPosts = () => {
           navigation={false}
         >
           {posts.map((post) => (
-            <SwiperSlide>
+            <SwiperSlide key={post.id}>
               <CreatePost
                 title={post.title}
                 subTitle={post.subTitle}

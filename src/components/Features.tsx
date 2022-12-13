@@ -10,34 +10,40 @@ import {
 
 const features = [
   {
+    id: 1,
     image: Feature1,
     text: "ACCOUNTABILITY",
   },
   {
+    id: 2,
     image: Feature2,
     text: "VARIETY",
   },
   {
+    id: 3,
     image: Feature3,
     text: "SUPPORT",
   },
   {
+    id: 4,
     image: Feature4,
     text: "MOTIVATION",
   },
   {
+    id: 5,
     image: Feature5,
     text: "GUARANTEED RESULTS",
   },
   {
+    id: 6,
     image: Feature6,
     text: "SOCIAL ATMOSPHERE",
   },
 ];
 
-const SingleFeature = (image: string | undefined, text: string) => {
+const SingleFeature = (image: string | undefined, text: string, id: number) => {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center" key={id}>
       <img
         src={image}
         alt={text}
@@ -58,7 +64,7 @@ const Features = () => {
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-6 mt-20 justify-evenly">
         {features.map((feature) => {
-          return SingleFeature(feature.image, feature.text);
+          return SingleFeature(feature.image, feature.text, feature.id);
         })}
       </div>
     </div>
