@@ -4,12 +4,10 @@ import Features from './components/Features';
 import JoinUs from './components/JoinUs';
 import Main from './components/Main';
 import Navbar from './components/Navbar';
-import { LoadingScreen } from './components/LoadingScreen';
 
 const App = () => {
   return (
     <div className="w-screen bg-primary">
-      <LoadingScreen />
       <Navbar />
       <Main />
       <Features />
