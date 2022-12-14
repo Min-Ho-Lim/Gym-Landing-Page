@@ -13,6 +13,9 @@ module.exports = {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
+      },
     },
     screens: {
       xs: "480px",
@@ -24,4 +27,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
