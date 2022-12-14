@@ -17,6 +17,7 @@ import Blog3 from "./blog3.jpg";
 import Blog4 from "./blog4.jpg";
 import Blog5 from "./blog5.jpg";
 import Blog6 from "./blog6.jpg";
+import LoadingSpinner from "./dumbbell-loading-spinner.svg";
 
 export {
   slide1,
@@ -38,4 +39,5 @@ export {
   Blog4,
   Blog5,
   Blog6,
+  LoadingSpinner,
 };

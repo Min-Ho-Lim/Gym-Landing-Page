@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import loadingSpinner from '../assets/dumbbell_loading_spinner.svg';
+import { LoadingSpinner } from "../assets";
 
 export const LoadingScreen = () => {
   return (
     <div className="w-full h-screen flex items-center justify-center bg-zinc-900">
       <div className="flex flex-col items-center justify-center gap-10 w-24 animate-pulse">
         <img
-          src={loadingSpinner}
+          src={LoadingSpinner}
           alt="Loading spinner"
           className="animate-spin-slow"
         />
