@@ -8,11 +8,25 @@ import {
   faTwitterSquare,
   faGooglePlusSquare,
 } from "@fortawesome/free-brands-svg-icons";
-
+import {
+  fas,
+  faLocationDot,
+  faHourglass,
+  faDumbbell,
+} from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
-  library.add(fab, faFacebookSquare, faTwitterSquare, faGooglePlusSquare);
+  library.add(
+    fab,
+    faFacebookSquare,
+    faTwitterSquare,
+    faGooglePlusSquare,
+    fas,
+    faLocationDot,
+    faHourglass,
+    faDumbbell
+  );
   return (
-    <footer className="w-full h-100 lg:h-60 p-10 font-poppins">
+    <footer className="w-full h-100 md:h-60 p-10 xl:p-16 font-poppins">
       <div className="flex flex-col md:flex-row md:justify-between">
         <div>
           <div className="flex">
@@ -55,6 +69,32 @@ const Footer = () => {
             </a>
           </div>
         </div>
+        <div className="flex flex-col w-48 gap-2 mt-6 md:mt-0 xl:w-64">
+          <div className="flex items-center gap-1">
+            <FontAwesomeIcon icon={["fas", "dumbbell"]} />
+            <p className="text-lg font-medium uppercase">About</p>
+          </div>
+          <p className="text-base font-thin">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div className="flex flex-col gap-2 mt-6 md:mt-0">
+          <div className="flex items-center gap-1">
+            <FontAwesomeIcon icon={["fas", "hourglass"]} />
+            <p className="text-lg font-medium uppercase">Working Hours</p>
+          </div>
+          <p className="text-base font-thin">00.00 - 24.00</p>
+        </div>
+
+        <div className="flex flex-col gap-2 mt-6 md:mt-0">
+          <div className="flex items-center gap-1">
+            <FontAwesomeIcon icon={["fas", "location-dot"]} />
+            <p className="text-lg font-medium uppercase">Location</p>
+          </div>
+          <p className="text-base font-thin">
+            123 Street, ABC, <br /> NC 12312, United States
+          </p>
+        </div>
         <div className="flex flex-col mt-6 md:mt-0">
           <div className="flex flex-row justify-between">
             <div className="flex flex-col md:text-right mr-4 gap-4 md:gap-0">
@@ -75,26 +115,6 @@ const Footer = () => {
                 href="#"
               >
                 Blog
-              </a>
-            </div>
-            <div className="flex flex-col md:text-right gap-4 md:gap-0">
-              <a
-                className="text-gray-200 hover:text-gray-200 hover:underline hover:scale-110 transform transition duration-200 ease-in-out"
-                href="#"
-              >
-                About Us
-              </a>
-              <a
-                className="md:mt-3 text-gray-200 hover:text-gray-200 hover:underline hover:scale-110 transform transition duration-200 ease-in-out"
-                href="#"
-              >
-                Contact Us
-              </a>
-              <a
-                className="md:mt-3 text-gray-200 hover:text-gray-200 hover:underline hover:scale-110 transform transition duration-200 ease-in-out"
-                href="#"
-              >
-                Location
               </a>
             </div>
           </div>
