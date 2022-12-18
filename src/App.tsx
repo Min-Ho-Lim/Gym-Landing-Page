@@ -1,6 +1,7 @@
 import React from "react";
 import BlogPosts from "./components/BlogPosts";
 import Features from "./components/Features";
+import Footer from "./components/Footer";
 import JoinUs from "./components/JoinUs";
 import Locations from "./components/Locations";
 import Main from "./components/Main";
@@ -15,6 +16,7 @@ const App = () => {
       <JoinUs />
       <BlogPosts />
       <Locations />
+      <Footer />
     </div>
   );
 };
