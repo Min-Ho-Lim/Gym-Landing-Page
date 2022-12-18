@@ -1,30 +1,17 @@
 import React from "react";
-import { library } from "@fortawesome/fontawesome-svg-core";
 import { GymName } from "../constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  fab,
   faFacebookSquare,
   faTwitterSquare,
   faGooglePlusSquare,
 } from "@fortawesome/free-brands-svg-icons";
 import {
-  fas,
   faLocationDot,
   faHourglass,
   faDumbbell,
 } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
-  library.add(
-    fab,
-    faFacebookSquare,
-    faTwitterSquare,
-    faGooglePlusSquare,
-    fas,
-    faLocationDot,
-    faHourglass,
-    faDumbbell
-  );
   return (
     <footer className="w-full h-100 md:h-60 p-10 xl:p-16 font-poppins">
       <div className="flex flex-col lg:flex-row lg:justify-between">
@@ -53,26 +40,26 @@ const Footer = () => {
               href="#"
               className="text-2xl text-gray-200 hover:text-gray-200 hover:scale-150 transform transition duration-200 ease-in-out"
             >
-              <FontAwesomeIcon icon={["fab", "facebook-square"]} />
+              <FontAwesomeIcon icon={faFacebookSquare}></FontAwesomeIcon>
             </a>
             <a
               href="#"
               className="text-2xl text-gray-200 hover:text-gray-200 hover:scale-150 transform transition duration-200 ease-in-out"
             >
-              <FontAwesomeIcon icon={["fab", "twitter-square"]} />
+              <FontAwesomeIcon icon={faTwitterSquare}></FontAwesomeIcon>
             </a>
             <a
               href="#"
               className="text-2xl text-gray-200 hover:text-gray-200 hover:scale-150 transform transition duration-200 ease-in-out"
             >
-              <FontAwesomeIcon icon={["fab", "google-plus-square"]} />
+              <FontAwesomeIcon icon={faGooglePlusSquare}></FontAwesomeIcon>
             </a>
           </div>
         </div>
         <div className="flex flex-col w-full justify-between sm:flex-row  md:w-3/4 md:justify-evenly">
           <div className="flex flex-col w-48 gap-2 mt-6 md:mt-0 xl:w-64">
             <div className="flex items-center gap-1">
-              <FontAwesomeIcon icon={["fas", "dumbbell"]} />
+              <FontAwesomeIcon icon={faDumbbell}></FontAwesomeIcon>
               <p className="text-lg font-medium uppercase">About</p>
             </div>
             <p className="text-base font-thin">
@@ -81,7 +68,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col gap-2 mt-6 md:mt-0">
             <div className="flex items-center gap-1">
-              <FontAwesomeIcon icon={["fas", "hourglass"]} />
+              <FontAwesomeIcon icon={faHourglass}></FontAwesomeIcon>
               <p className="text-lg font-medium uppercase">Working Hours</p>
             </div>
             <p className="text-base font-thin">00.00 - 24.00</p>
@@ -89,7 +76,7 @@ const Footer = () => {
 
           <div className="flex flex-col gap-2 mt-6 md:mt-0">
             <div className="flex items-center gap-1">
-              <FontAwesomeIcon icon={["fas", "location-dot"]} />
+              <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon>
               <p className="text-lg font-medium uppercase">Location</p>
             </div>
             <p className="text-base font-thin">
